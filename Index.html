@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <script src="script.js" defer></script>
- <title>Fast World War Two</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Fast World War Two</title>
 </head>
-<body>
+
+<dbody>
+
   <body>
     <div class="TheatreOfOperations" id="TheatreOfOperations">
       <h2>Eastern Europe</h2>
       <div class="BattleTrack" id="BattleTrack">
 
-        <canvas id="LastSpaceAllied" width="20" height="20" style="border:1px solid #00FF00;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="VictoryPointIconAlliedTwo" width="20" height="20" style="border:1px solid #00FF00;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="VictoryPointIconAlliedOne" width="20" height="20" style="border:1px solid #00FF00;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
+        <canvas id="LastSpaceAllied" width="20" height="20" style="border:1px solid #659647;"></canvas>
+        <canvas class="square"></canvas>
+        <canvas id="empty" width="20" height="20" style="border:1px solid #c4d0b1;"></canvas>
+        <canvas id="empty" width="20" height="20" style="border:1px solid #c4d0b1;"></canvas>
+        <canvas id="VictoryPointIconAlliedTwo" width="20" height="20" style="border:1px solid #659647;"></canvas>
+        <canvas id="empty" width="20" height="20" style="border:1px solid #c4d0b1;"></canvas>
+        <canvas id="empty" width="20" height="20" style="border:1px solid #c4d0b1;"></canvas>
+        <canvas id="empty" width="20" height="20" style="border:1px solid #c4d0b1;"></canvas>
+        <canvas id="empty" width="20" height="20" style="border:1px solid #c4d0b1;"></canvas>
+        <canvas id="VictoryPointIconAlliedOne" width="20" height="20" style="border:1px solid #659647;"></canvas>
+        <canvas id="empty" width="20" height="20" style="border:1px solid #c4d0b1;"></canvas>
+        <canvas id="empty" width="20" height="20" style="border:1px solid #c4d0b1;"></canvas>
+        <canvas id="empty" width="20" height="20" style="border:1px solid #c4d0b1;"></canvas>
+        <canvas id="empty" width="20" height="20" style="border:1px solid #c4d0b1;"></canvas>
         <canvas id="start" width="20" height="20" style="border:1px solid #ff0000;"></canvas>
         <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
         <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
@@ -43,53 +47,94 @@
         <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
         <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
         <canvas id="LastSpaceAxis" width="20" height="20" style="border:1px solid #808080;"></canvas>
-
       </div>
-      <div class="Campaign" id="Campaign">
-        <canvas id="empty" width="50" height="50" style="border:1px solid #000;"></canvas>
+      <div class="Campaign" id="PolandCampaign">
+        <canvas id="BattleOfTheBzura" width="50" height="50" style="border:1px solid #000;"></canvas>
+        <canvas id="BattleOfKock" width="50" height="50" style="border:1px solid #000;"></canvas>
+        <canvas id="VictoryShield" class="shield">
+      </div>
+      <div class="Campaign" id="BalkansCampaign">
+        <canvas id="InvasionOfYugoslavia" class="shield" width="50" height="50" style="border:1px solid #000;"></canvas>
+        <canvas id="BattleOfGreece" width="50" height="50" style="border:1px solid #000;"></canvas>
+        <canvas id="BattleOfCrete" width="50" height="50" style="border:1px solid #000;"></canvas>
+        <canvas id="VictoryShieldBalkansCampaign" class="shield">
       </div>
     </div>
-      <script>
-        var canvas = document.getElementById("VictoryPointIconAlliedOne");
-        var ctx = canvas.getContext("2d");
-        ctx.font = "10px Arial";
-        ctx.fillText("1", 7, 12);
-      </script>
+    </div>
+    <script>
+      var canvas = document.getElementById("VictoryPointIconAlliedOne");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "10px Arial";
+      ctx.fillText("1", 7, 12);
+    </script>
 
-      <script>
-        var canvas = document.getElementById("VictoryPointIconAlliedTwo");
-        var ctx = canvas.getContext("2d");
-        ctx.font = "10px Arial";
-        ctx.fillText("2", 7, 12);
-      </script>
+    <script>
+      var canvas = document.getElementById("VictoryPointIconAlliedTwo");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "10px Arial";
+      ctx.fillText("2", 7, 12);
+    </script>
 
-      <script>
-        var canvas = document.getElementById("LastSpaceAllied");
-        var ctx = canvas.getContext("2d");
-        ctx.font = "10px Arial";
-        ctx.fillText("V", 7, 12);
-      </script>
+    <script>
+      var canvas = document.getElementById("LastSpaceAllied");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "10px Arial";
+      ctx.fillText("V", 7, 12);
+    </script>
 
-      <script>
-        var canvas = document.getElementById("VictoryPointIconAxisOne");
-        var ctx = canvas.getContext("2d");
-        ctx.font = "10px Arial";
-        ctx.fillText("1", 7, 12);
-      </script>
+    <script>
+      var canvas = document.getElementById("VictoryPointIconAxisOne");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "10px Arial";
+      ctx.fillText("1", 7, 12);
+    </script>
 
-      <script>
-        var canvas = document.getElementById("VictoryPointIconAxisTwo");
-        var ctx = canvas.getContext("2d");
-        ctx.font = "10px Arial";
-        ctx.fillText("2", 7, 12);
-      </script>
+    <script>
+      var canvas = document.getElementById("VictoryPointIconAxisTwo");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "10px Arial";
+      ctx.fillText("2", 7, 12);
+    </script>
 
-      <script>
-        var canvas = document.getElementById("LastSpaceAxis");
-        var ctx = canvas.getContext("2d");
-        ctx.font = "10px Arial";
-        ctx.fillText("V", 7, 12);
-      </script>
-   </body>
-</body>
+    <script>
+      var canvas = document.getElementById("LastSpaceAxis");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "10px Arial";
+      ctx.fillText("V", 7, 12);
+    </script>
+
+    <script>
+      var canvas = document.getElementById("BattleOfTheBzura");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "20px Arial";
+      ctx.fillText("+1", 15, 30);
+    </script>
+
+    <script>
+      var canvas = document.getElementById("BattleOfKock");
+      var context = canvas.getContext('2d');
+      var base_image = new Image();
+      base_image.src = 'icons8-manufacturing-50.png';
+      base_image.onload = function () {
+        context.drawImage(base_image, 0, 0);
+      }
+    </script>
+
+    <script>
+      var canvas = document.getElementById("VictoryShield");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "100px Arial";
+      ctx.fillText("2", 125, 100);
+    </script>
+
+    <script>
+      var canvas = document.getElementById("VictoryShieldBalkansCampaign");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "100px Arial";
+      ctx.fillText("3", 125, 100);
+    </script>
+
+  </body>
+  </body>
+
 </html>

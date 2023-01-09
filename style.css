@@ -1,0 +1,16 @@
+:root {
+    --shield-border-color: #111;
+  }
+  
+  .shield {
+    height: 38px;
+    width: 38px;
+    border: 1px solid var(--shield-border-color);
+    border-radius: 50% 50% 50% 50%  / 12% 12% 88% 88%;
+  }
+  
+  .square {
+    height: 20px;
+    width: 20px;
+    background-color: #c4d0b1;
+  }

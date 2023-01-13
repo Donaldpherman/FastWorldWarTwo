@@ -1,16 +1,53 @@
 :root {
-    --shield-border-color: #111;
-  }
-  
-  .shield {
-    height: 38px;
-    width: 38px;
-    border: 1px solid var(--shield-border-color);
-    border-radius: 50% 50% 50% 50%  / 12% 12% 88% 88%;
-  }
-  
-  .square {
-    height: 20px;
-    width: 20px;
-    background-color: #c4d0b1;
-  }
+  --shield-border-color: black;
+}
+
+.shield {
+  height: 38px;
+  width: 38px;
+  border: 1px solid var(--shield-border-color);
+  border-radius: 50% 50% 50% 50% / 12% 12% 88% 88%;
+}
+
+.smallshield {
+  height: 13px;
+  width: 13px;
+  background: yellow;
+  position: absolute;
+  border: thin solid orange;
+  border-radius: 50% 50% 50% 50% / 12% 12% 88% 88%;
+}
+
+.box {
+  height: 20px;
+  width: 20px;
+  border-style: solid;
+  border-width: thick thin;
+  border-color: black;
+  clear: both;
+  display: inline-block;
+}
+
+.red {
+  background-color: red;
+}
+
+.tan {
+  background-color: tan;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.lightgrey {
+  background-color: lightgrey;
+}
+
+.green {
+  background-color: green;
+}
+
+span.white-space-fix {
+  margin-right: -4px;
+}

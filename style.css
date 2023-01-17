@@ -9,23 +9,49 @@
   border-radius: 50% 50% 50% 50% / 12% 12% 88% 88%;
 }
 
-.smallshield {
+.small-shield {
   height: 13px;
   width: 13px;
   background: yellow;
-  position: absolute;
   border: thin solid orange;
   border-radius: 50% 50% 50% 50% / 12% 12% 88% 88%;
+  position: absolute;
+  transform: translate(20%, 20%);
+  text-align: center;
+  font-size: 13px;
+  color: orange
 }
 
-.box {
-  height: 20px;
-  width: 20px;
+.battleTrackBox {  
   border-style: solid;
   border-width: thick thin;
   border-color: black;
   clear: both;
+  vertical-align: top;
+}
+
+.little {
+  height: 20px;
+  width: 20px;
+}
+
+.big {
+  height: 40px;
+  width: 40px;
+}
+
+.horizontal {
   display: inline-block;
+}
+
+.royalAirForceRoundel {
+  background: red;
+  border-radius: 50%;
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  box-shadow: 0 0 0 7px white, 0 0 0 12px blue;
+  margin: 14px;
 }
 
 .red {

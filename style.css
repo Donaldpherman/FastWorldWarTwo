@@ -59,7 +59,7 @@
 }
 
 .tan {
-  background-color: tan;
+  background-color: #c3d1b0;
 }
 
 .blue {
@@ -67,13 +67,61 @@
 }
 
 .lightgrey {
-  background-color: lightgrey;
+  background-color: #cacbcc;
+}
+
+.grey {
+  background-color: grey;
 }
 
 .green {
-  background-color: green;
+  background-color: #5e9743;
 }
 
 span.white-space-fix {
   margin-right: -4px;
+}
+
+.floatRight  {
+  float: right;
+}
+
+.flex-container {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.ironCross {
+  background: black;
+  height: 40px;
+  position: relative;
+  width: 7px;
+  margin-left: 1em;
+}
+
+.ironCross:after {
+    background: black;
+    content: "";
+    height: 8px;
+    left: -16px;
+    position: absolute;
+    top: 15px;
+    width: 40px;
+}
+
+.marginLeft {
+  margin-left: -1.25em;
 }

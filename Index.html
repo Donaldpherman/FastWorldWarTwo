@@ -13,15 +13,19 @@
   <body>
     <div class="TheatreOfOperations" id="TheatreOfOperations">
       <h2>Eastern Europe</h2>
-      <div class="BattleTrack" id="BattleTrack">
+      <span class="BattleTrack" id="BattleTrack">
 
-        <span class='battleTrackBox little tan white-space-fix horizontal'></span>
-        <span class='battleTrackBox little tan white-space-fix horizontal'></span>
-        <span class='battleTrackBox little tan white-space-fix horizontal'></span>
-        <span class='battleTrackBox little tan white-space-fix horizontal'></span>
-
-        <span class='battleTrackBox little green white-space-fix horizontal'>
-          <span class='small-shield'>2</span>
+        <span class="flex-container">
+          <span class='battleTrackBox little green white-space-fix horizontal'>
+            <span class='small-shield'>2</span>
+          </span>
+          <div class='battleTrackBox little tan white-space-fix'></div>
+          <div class='battleTrackBox little tan white-space-fix'></div>
+          <div class='battleTrackBox little tan white-space-fix'></div>
+    
+          <div class='battleTrackBox big LastSpace tan white-space-fix'>
+            <div class="royalAirForceRoundel"></div>
+          </div>
         </span>
         
         <span class='battleTrackBox little tan white-space-fix horizontal'></span>
@@ -45,37 +49,42 @@
         <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
         <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
         
-        <canvas id="VictoryPointIconAxisOne" width="20" height="20" style="border:1px solid #808080;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="VictoryPointIconAxisTwo" width="20" height="20" style="border:1px solid #808080;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="empty" width="20" height="20" style="border:1px solid #000;"></canvas>
-        <canvas id="LastSpaceAxis" width="20" height="20" style="border:1px solid #808080;"></canvas>
-      </div>
-      
-      <div class='battleTrackBox little tan white-space-fix'></div>
-      <div class='battleTrackBox little tan white-space-fix'></div>
-      <div class='battleTrackBox little tan white-space-fix'></div>
+        <span class='battleTrackBox little grey white-space-fix horizontal'>
+          <span class='small-shield'>1</span>
+        </span>
 
-      <div class='battleTrackBox big LastSpace tan white-space-fix'>
-        <div class="royalAirForceRoundel"></div>
-      </div>
+        <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
+        <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
+        <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
+        <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
+
+        <span class="flex-container">
+          <span class='battleTrackBox little grey white-space-fix horizontal'>
+            <span class='small-shield'>2</span>
+          </span>
+          <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
+          <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
+          <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
+          <div class='battleTrackBox big LastSpace lightgrey white-space-fix marginLeft'>
+            <div class=ironCross></div>
+          </div>
+        </span>
+
+        <canvas id="LastSpaceAxis" width="20" height="20" style="border:1px solid #808080;"></canvas>
       
       <div class="Campaign" id="PolandCampaign">
         <canvas id="BattleOfTheBzura" width="50" height="50" style="border:1px solid #000;"></canvas>
         <canvas id="BattleOfKock" width="50" height="50" style="border:1px solid #000;"></canvas>
         <canvas id="VictoryShield" class="shield">
       </div>
+      
       <div class="Campaign" id="BalkansCampaign">
         <canvas id="InvasionOfYugoslavia" class="shield" width="50" height="50" style="border:1px solid #000;"></canvas>
         <canvas id="BattleOfGreece" width="50" height="50" style="border:1px solid #000;"></canvas>
         <canvas id="BattleOfCrete" width="50" height="50" style="border:1px solid #000;"></canvas>
         <canvas id="VictoryShieldBalkansCampaign" class="shield">
       </div>
+
     </div>
     </div>
     <script>

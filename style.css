@@ -1,21 +1,27 @@
-:root {
-  --shield-border-color: black;
+.shield {
+  border-radius: 50% 50% 50% 50% / 12% 12% 88% 88%;
+  position: absolute;
 }
 
-.shield {
+.campaign-victory-points {
   height: 38px;
   width: 38px;
-  border: 1px solid var(--shield-border-color);
-  border-radius: 50% 50% 50% 50% / 12% 12% 88% 88%;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-.small-shield {
+.campaign-victory-points-value {
+  position:relative;
+  font-size: 26px;
+  left: 13px
+}
+
+.victory-point-icon {
   height: 13px;
   width: 13px;
   background: yellow;
   border: thin solid orange;
-  border-radius: 50% 50% 50% 50% / 12% 12% 88% 88%;
-  position: absolute;
   transform: translate(20%, 20%);
   text-align: center;
   font-size: 13px;
@@ -23,14 +29,13 @@
   vertical-align: text-bottom;
 }
 
-.smallShieldValue {
+.victory-point-icon-value {
   position:relative;
   top:-2px;
 }
 
 .battleTrackBox {  
   border-style: solid;
-  border-width: thick thin;
   border-color: black;
   clear: both;
   vertical-align: top;
@@ -39,11 +44,19 @@
 .little {
   height: 20px;
   width: 20px;
+  border-width: thick thin;
 }
 
 .big {
   height: 40px;
   width: 40px;
+  border-width: thick;
+}
+
+.battleSpace {
+  height: 60px;
+  width: 60px;
+  background-color: tan;
 }
 
 .horizontal {
@@ -84,6 +97,14 @@
   background-color: #5e9743;
 }
 
+.black-background {
+  background-color: black;
+}
+
+.white {
+  color: white;
+}
+
 span.white-space-fix {
   margin-right: -4px;
 }
@@ -116,7 +137,11 @@ span.white-space-fix {
 }
 
 .marginRight {
-  margin-left: -1.25em;
+  margin-left: -1.75em;
+}
+
+.marginLight {
+  margin-left: 1.25em;
 }
 
 .marginLight {

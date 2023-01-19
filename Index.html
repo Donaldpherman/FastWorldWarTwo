@@ -17,8 +17,8 @@
 
         <span class="flex-container" style="width: 17px">
           <span class='battleTrackBox little green white-space-fix horizontal'>
-            <span class='small-shield'>
-              <span class ="smallShieldValue">2</span>
+            <span class='shield victory-point-icon'>
+              <span class ="victory-point-icon-value">2</span>
             </span>
           </span>
           <div class='battleTrackBox little tan white-space-fix'></div>
@@ -36,8 +36,8 @@
         <span class='battleTrackBox little tan white-space-fix horizontal'></span>
 
         <span class='battleTrackBox little green white-space-fix horizontal'>
-          <span class='small-shield'>
-            <span class ="smallShieldValue">1</span>
+          <span class='shield victory-point-icon'>
+            <span class ="victory-point-icon-value">1</span>
           </span>
         </span>
 
@@ -54,8 +54,8 @@
         <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
         
         <span class='battleTrackBox little grey white-space-fix horizontal'>
-          <span class='small-shield'>
-            <span class ="smallShieldValue">1</span>
+          <span class='shield victory-point-icon'>
+            <span class ="victory-point-icon-value">1</span>
           </span>
         </span>
 
@@ -66,8 +66,8 @@
 
         <span class="flex-container">
           <span class='battleTrackBox little grey white-space-fix horizontal '>
-            <span class='small-shield'>
-              <span class ="smallShieldValue">2</span>
+            <span class='shield victory-point-icon'>
+              <span class ="victory-point-icon-value">2</span>
             </span>
           </span>
           <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
@@ -79,52 +79,30 @@
         </span>
       
       <div class="Campaign" id="PolandCampaign">
-        <canvas id="BattleOfTheBzura" width="50" height="50" style="border:1px solid #000;"></canvas>
-        <canvas id="BattleOfKock" width="50" height="50" style="border:1px solid #000;"></canvas>
-        <canvas id="VictoryShield" class="shield">
+        <span id="BattleOfTheBzura" class='battleTrackBox battleSpace horizontal'>
+          <span class="shield campaign-victory-points black-background">
+            <span class="campaign-victory-points-value white">1</span>
+          </span>
+        </span>
+        <span id="BattleOfKock" class='battleTrackBox battleSpace horizontal'></span>
+        <span class="shield campaign-victory-points white">
+          <span class="campaign-victory-points-value">2</span>
+        </span>
       </div>
       
       <div class="Campaign" id="BalkansCampaign">
-        <canvas id="InvasionOfYugoslavia" class="shield" width="50" height="50" style="border:1px solid #000;"></canvas>
+        <span id="InvasionOfYugoslavia" width="50" height="50" style="border:1px solid #000;">
+          <span class="shield campaign-victory-points black-background">
+            <span class="campaign-victory-points-value white">1</span>
+          </span>
+        </span>
         <canvas id="BattleOfGreece" width="50" height="50" style="border:1px solid #000;"></canvas>
         <canvas id="BattleOfCrete" width="50" height="50" style="border:1px solid #000;"></canvas>
-        <canvas id="VictoryShieldBalkansCampaign" class="shield">
+        <canvas id="VictoryShieldBalkansCampaign" class="shield campaign-victory-points"></canvas>
       </div>
 
     </div>
     </div>
-
-    <script>
-      var canvas = document.getElementById("BattleOfTheBzura");
-      var ctx = canvas.getContext("2d");
-      ctx.font = "20px Arial";
-      ctx.fillText("+1", 15, 30);
-    </script>
-
-    <script>
-      var canvas = document.getElementById("BattleOfKock");
-      var context = canvas.getContext('2d');
-      var base_image = new Image();
-      base_image.src = 'icons8-manufacturing-50.png';
-      base_image.onload = function () {
-        context.drawImage(base_image, 0, 0);
-      }
-    </script>
-
-    <script>
-      var canvas = document.getElementById("VictoryShield");
-      var ctx = canvas.getContext("2d");
-      ctx.font = "100px Arial";
-      ctx.fillText("2", 125, 100);
-    </script>
-
-    <script>
-      var canvas = document.getElementById("VictoryShieldBalkansCampaign");
-      var ctx = canvas.getContext("2d");
-      ctx.font = "100px Arial";
-      ctx.fillText("3", 125, 100);
-    </script>
-
   </body>
 
 </html>

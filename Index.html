@@ -15,7 +15,7 @@
       <h2>Eastern Europe</h2>
       <span class="BattleTrack" id="BattleTrack">
 
-        <span class="flex-container">
+        <span class="flex-container" style="width: 17px">
           <span class='battleTrackBox little green white-space-fix horizontal'>
             <span class='small-shield'>2</span>
           </span>
@@ -59,18 +59,16 @@
         <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
 
         <span class="flex-container">
-          <span class='battleTrackBox little grey white-space-fix horizontal'>
+          <span class='battleTrackBox little grey white-space-fix horizontal '>
             <span class='small-shield'>2</span>
           </span>
           <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
           <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
           <span class='battleTrackBox little lightgrey white-space-fix horizontal'></span>
-          <div class='battleTrackBox big LastSpace lightgrey white-space-fix marginLeft'>
+          <div class='battleTrackBox big LastSpace lightgrey white-space-fix marginRight'>
             <div class=ironCross></div>
           </div>
         </span>
-
-        <canvas id="LastSpaceAxis" width="20" height="20" style="border:1px solid #808080;"></canvas>
       
       <div class="Campaign" id="PolandCampaign">
         <canvas id="BattleOfTheBzura" width="50" height="50" style="border:1px solid #000;"></canvas>
@@ -87,47 +85,6 @@
 
     </div>
     </div>
-    <script>
-      var canvas = document.getElementById("VictoryPointIconAlliedOne");
-      var ctx = canvas.getContext("2d");
-      ctx.font = "10px Arial";
-      ctx.fillText("1", 7, 12);
-    </script>
-
-    <script>
-      var canvas = document.getElementById("VictoryPointIconAlliedTwo");
-      var ctx = canvas.getContext("2d");
-      ctx.font = "10px Arial";
-      ctx.fillText("2", 7, 12);
-    </script>
-
-    <script>
-      var canvas = document.getElementById("LastSpaceAllied");
-      var ctx = canvas.getContext("2d");
-      ctx.font = "10px Arial";
-      ctx.fillText("V", 7, 12);
-    </script>
-
-    <script>
-      var canvas = document.getElementById("VictoryPointIconAxisOne");
-      var ctx = canvas.getContext("2d");
-      ctx.font = "10px Arial";
-      ctx.fillText("1", 7, 12);
-    </script>
-
-    <script>
-      var canvas = document.getElementById("VictoryPointIconAxisTwo");
-      var ctx = canvas.getContext("2d");
-      ctx.font = "10px Arial";
-      ctx.fillText("2", 7, 12);
-    </script>
-
-    <script>
-      var canvas = document.getElementById("LastSpaceAxis");
-      var ctx = canvas.getContext("2d");
-      ctx.font = "10px Arial";
-      ctx.fillText("V", 7, 12);
-    </script>
 
     <script>
       var canvas = document.getElementById("BattleOfTheBzura");
@@ -160,7 +117,6 @@
       ctx.fillText("3", 125, 100);
     </script>
 
-  </body>
   </body>
 
 </html>

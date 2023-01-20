@@ -12,7 +12,7 @@
 }
 
 .campaign-victory-points-value {
-  position:relative;
+  position: relative;
   font-size: 26px;
   left: 13px
 }
@@ -30,15 +30,28 @@
 }
 
 .victory-point-icon-value {
-  position:relative;
-  top:-2px;
+  position: relative;
+  top: -2px;
 }
 
-.battleTrackBox {  
+.battleTrackBox {
   border-style: solid;
   border-color: black;
   clear: both;
   vertical-align: top;
+}
+
+.battleSpace {
+  height: 60px;
+  width: 60px;
+  background-color: tan;
+}
+
+.battle-space-value {
+  position: relative;
+  font-size: 26px;
+  left: 13px;
+  top: 15px;
 }
 
 .little {
@@ -51,12 +64,6 @@
   height: 40px;
   width: 40px;
   border-width: thick;
-}
-
-.battleSpace {
-  height: 60px;
-  width: 60px;
-  background-color: tan;
 }
 
 .horizontal {
@@ -105,11 +112,15 @@
   color: white;
 }
 
+.black {
+  color: black;
+}
+
 span.white-space-fix {
   margin-right: -4px;
 }
 
-.floatRight  {
+.floatRight {
   float: right;
 }
 
@@ -127,13 +138,13 @@ span.white-space-fix {
 }
 
 .ironCross:after {
-    background: black;
-    content: "";
-    height: 8px;
-    left: -16px;
-    position: absolute;
-    top: 15px;
-    width: 40px;
+  background: black;
+  content: "";
+  height: 8px;
+  left: -16px;
+  position: absolute;
+  top: 15px;
+  width: 40px;
 }
 
 .marginRight {
@@ -146,4 +157,42 @@ span.white-space-fix {
 
 .marginLight {
   margin-left: 1.25em;
+}
+
+.center {
+  padding: 30px;
+}
+
+.mainFactory {
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  position: absolute;
+  margin-left: 12px;
+  margin-top: 12px;
+  /*top: 5px;*/
+  /*left: 5px; */
+}
+
+.window {
+  width: 5px;
+  height: 5px;
+  background-color: #F5F19A;
+  position: absolute;
+  border: 1px solid #403F63;
+}
+
+#window-left {
+  margin-left: 13px;
+  margin-top: 24px;
+}
+
+#window-center {
+  margin-left: 27px;
+  margin-top: 24px;
+}
+
+#window-right {
+  margin-left: 39px;
+  margin-top: 24px;
 }

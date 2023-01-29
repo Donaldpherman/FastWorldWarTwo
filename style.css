@@ -45,7 +45,6 @@
   margin: 1px;
   height: 60px;
   width: 60px;
-  background-color: tan;
 }
 
 .battle-space-value {
@@ -55,6 +54,17 @@
   top: 15px;
 }
 
+.land-spaces {
+  background-color: tan;
+}
+
+.shore-space {
+  background: linear-gradient(to bottom left, tan 0%, tan 50%, blue 50%, blue 100%);
+}
+
+.bombing {
+  
+}
 .little {
   height: 20px;
   width: 20px;

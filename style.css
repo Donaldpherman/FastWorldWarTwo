@@ -62,9 +62,16 @@
   background: linear-gradient(to bottom left, tan 0%, tan 50%, blue 50%, blue 100%);
 }
 
-.bombing {
-  
+.bombing-right-rectangle {
+  background: url(icons/bomb-war-svgrepo-com.svg);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  margin-left: 12px;
+  margin-top: 14px;
 }
+
 .little {
   height: 20px;
   width: 20px;
